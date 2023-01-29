@@ -9,7 +9,10 @@ const Filters = {
 const state = {
   todos: [
     new Todo('Piedra del alma'),
-    new Todo('Piedra del infinito')
+    new Todo('Piedra del infinito'),
+    new Todo('Piedra del filosofal'),
+    new Todo('Piedra del poder'),
+    new Todo('Piedra del espacio'),
   ],
   filter: Filters.All
 }
