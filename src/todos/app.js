@@ -40,6 +40,13 @@ export const App = ( elementId ) => {
 
   todoListUL.addEventListener('click', (evt) => {
     const id = evt.target.closest('[data-id]').getAttribute('data-id');
+
+    if ( evt.target.classList.contains('destroy') ) {
+      todoStore.deleteTodo( id );
+      displayTodos();
+      return;
+    }
+
     todoStore.toggleTodo( id );
     displayTodos();
   });
